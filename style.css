@@ -27,15 +27,15 @@ header h1{
 
 nav{
     background-color: #f4f4f4;
-    padding:20px;
+    padding:10px;
     position: sticky;
     top: 90px;
 }
 
+
 nav ul{
     white-space: nowrap;
     max-width: 1200px;
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -43,9 +43,13 @@ nav li{
     display: inline-block;
     width:20%;
     font-size: 18px;
+}
+
+nav a{
     color:rgb(112, 116, 113);
     text-decoration: none;
-}
+} 
+
  main{
     max-width:100%;
     width:1200px;
@@ -72,6 +76,11 @@ nav li{
     width: 40%;
     margin: 5px;
  }
+
+ .image li:hover{
+    position: relative;
+    top: -4px;
+}
 
 .image img{
     max-width:100%;
@@ -117,4 +126,58 @@ nav li{
     font-size: 13px;
     border-radius: 20px;
     border: 2px solid white;
+}
+
+nav li:hover{
+    font-size:1.2em;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:960px) {
+    
+    .banner .welcome h2{
+        font-size: 40px;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+
+    .banner .welcome {
+        position:relative;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .banner .welcome br{
+        display: none;
+    }
+
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+
+    .image li{
+        width: 100%;
+        margin:20px auto;
+        display: block;
+    }
+    nav{
+        padding: 20px;
+    }
+    
+    nav li{
+        font-size: 15px;
+        display: block;
+        width: 100%;
+        margin: 10px;
+        padding:0px 10px;
+        text-align: left;
+        text-decoration: underline;
+    }
+
+    
 }
